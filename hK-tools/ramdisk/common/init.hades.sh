@@ -600,7 +600,7 @@ case "$target" in
 				# enable thermal core_control now
 				echo 1 > /sys/module/msm_thermal/core_control/enabled
 
-				# from lsswizard@xda - INTERACTIVE BALANCED BATTERY TWEAKS - Govtunner project code
+				# Govtunner project code - INTERACTIVE BALANCED BATTERY TWEAKS - 
 
 				echo 0 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
 				echo 300 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
@@ -630,6 +630,9 @@ case "$target" in
 				chmod 644 /sys/module/lowmemorykiller/parameters/debug_level
 				echo "0" > /sys/module/lowmemorykiller/parameters/debug_level
 				fi
+
+				# Permissive
+ 				setenforce 0
 
 				# Init.d support
 				mount -o remount,rw /system
