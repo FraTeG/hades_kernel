@@ -1,6 +1,7 @@
 <b><#selectbg_g>v2.6 - 01.08.2017</#></b>
 <*>rebased kernel from scratch on A500FUXXU1CQF5 June 2017 security patch</*>
 <*>built with optimised gcc 4.9.4</*>
+<*>added latest Magisk v13.3 and SuperSU 2.82 SR1</*>
 <*>fixed some graphic glitches (blue flickers)</*>
 <*>ditched some things that weren`t actually working</*>
 
